@@ -3,9 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono&family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/estilos.css">
     <title>Masterdots Game</title>
+   
 </head>
 <body>
-    
+    <!-- CABECERA -->
+    <header>
+        <img src="./img/logo.png" alt="Logo MasterDots">
+    </header>
+    <!-- FORMULARIO DE USUARIO-->
+    <main>
+        <form action="#">
+            <div class ="itemForm">   
+                <label for="name">Introduce tu Nick:</label>
+                <input type="text" name="nick" value="@" id="nicka" readonly>
+                <input type="text" name="nick">
+            </div>
+            <div class="itemform">
+                <label for="tamano">Tamaño del juego</label>
+                <select name="tamano" id="tamano">
+                    <option value="">--Por favor elige un tamaño--</option>
+                    <option value="1" >4x4</option>
+                    <option value="2" >5x5</option>
+                    <option value="3" >6x6</option>
+
+                </select>
+            </div>
+            <div class="itemform">
+               <input type="submit" value="Jugar"> 
+            </div>
+        </form>
+
+    </main>
+    <!-- PIE DE LA PAGINA -->
+    <footer>
+        <p>Curso FrontEnd HTML, CSS y JS</p>
+    </footer>
 </body>
 </html>
